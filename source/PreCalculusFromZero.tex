@@ -1,17 +1,16 @@
 \documentclass[12pt, letterpaper]{article}
-
 \usepackage[utf8]{inputenc}  % Basic character encoding
 \usepackage{amsmath}         % For mathematical  formulas
 \usepackage{amssymb}         % Provides an extended symbol collection.
 \usepackage{pgfplots}        % For plotting
-
 \setcounter{secnumdepth}{0} % sections are level 1
 
-% personal data
+% Personal data
 \title{Pre-Calculus from Zero}
 \author{Basic Pre-Calculus Topics}
 \date{Dec 2017}
 
+% Style settings
 \setlength\parindent{0pt}
 
 % End of preamble
@@ -21,7 +20,7 @@
 
 \section{Introduction}
 
-The Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other
+The Pythagorean theorem $x^2 + y^2 = z^2$ was proved to be invalid for other 
 exponents. Meaning the next equation has no integer solutions:
 
 $$x^n+ y^n = z^n$$
@@ -29,10 +28,11 @@ $$x^n+ y^n = z^n$$
 \section{Algebra}
 \section{Sets}
 
-In mathematics, a set is a collection of distinct objects. A set is also itself an object. For example, the numbers 2, 4, and 6 are distinct objects
-when considered separately, but when they are considered collectively they form a single set of size three, written {2,4,6}.
+In mathematics, a set is a collection of distinct objects. A set is also itself
+an object. For example, the numbers 2, 4, and 6 are distinct objects when 
+considered separately, but when they are considered collectively they form a 
+single set of size three, written {2,4,6}.
 \\
-
 \noindent$\mathbb{P}$, denoting the set of all primes:
 $\mathbb{P}$ = (2, 3, 5, 7, 11, 13, 17, ...)
 \\\\
@@ -40,22 +40,22 @@ A prime number is a natural number greater than 1 that has no positive
 divisors other than 1 and itself.
 \\
 
-\noindent$\mathbb{N}$, denoting the set of all natural numbers: $\mathbb{N}$ =
-(0, 1, 2, 3, ...)
+\noindent$\mathbb{N}$, denoting the set of all natural numbers:
+$\mathbb{N}$ = (0, 1, 2, 3, ...)
 \\\\
 The natural numbers are those used for counting.
 \\
 
-\noindent$\mathbb{Z}$, denoting the set of all integers: $\mathbb{Z}$ =
-(..., -2, -1, 0, 1, 2, ...)
+\noindent$\mathbb{Z}$, denoting the set of all integers: 
+$\mathbb{Z}$ = (..., -2, -1, 0, 1, 2, ...)
 \\\\
 An integer is a number that can be written without a fractional component.
 For example, 22, 6, 0 and -2048 are integers,
 while 4.75, 5$\frac{1}{2}$ and $\sqrt{2}$ are not.
 \\
 
-\noindent$\mathbb{Q}$, denoting the set of all rational numbers: $\mathbb{Q}$ =
-(a/b : a, b $\in$ Z, b $\neq$ 0)
+\noindent$\mathbb{Q}$, denoting the set of all rational numbers:
+$\mathbb{Q}$ = (a/b : a, b $\in$ Z, b $\neq$ 0)
 \\\\
 A rational number is any number that can be expressed as the quotient or
 fraction p/q of two integers, a numerator p and a non-zero denominator q.
@@ -83,29 +83,11 @@ mathematician René Descartes (1596–1650).
 
 The GCF (greatest common factor) of two or more monomials is the product of all 
 their common prime factors. For example, the GCF of $6x$ and $4x^2$ is $2x$.
-
+i
 For example, to factor $-\frac{3}{5}z^3 - 6z^2$, we would first get a common
 denominator and factor as: 
 \[ -\frac{3}{5}z^3 - 6z^2 = \frac{-3z^3 - 30z^2}{5} =
 \frac{-3z^2(z + 10)}{5} = -\frac{3z^2(z + 10)}{5}\]
-
-\begin{tikzpicture}[baseline]
-\begin{axis}[
-axis y line=center,
-axis x line=middle,
-axis equal,
-grid=both,
-xmax=10,xmin=-10,
-ymin=-10,ymax=10,
-xlabel=$x$,ylabel=$y$,
-xtick={-10,...,10},
-ytick={-10,...,10},
-width=15cm,
-anchor=center,
-]
-\addplot {x^2-3*x-10} ;
-\end{axis}
-\end{tikzpicture}
 
 \section{Polynomial Functions}
 
@@ -132,16 +114,15 @@ Info here. Add some information on the subject above.
 Info here. Add some information on the subject above. 
 
 
+% Sample Exam /////////////////////////////////////////////////////////////////
 \section{Sample Final Exam}
-
 Below is a sample final exam:
 
-
+% Question 01 /////////////////////////////////////////////////////////////////
 \subsection{Question 1:}
-
-1. Let $f(x)=x-7$ and let $g(x)=x^2-49$. Specify the domain of $f(x)/g(x)$.
-\\\\
-Notes: The domain is the set of all possible x-values which will make the function "work", and will output real y-values.
+1. Let $f(x)=x-7$ and let $g(x)=x^2-49$. Specify the domain of $f(x)/g(x)$.\\\\
+Notes: The domain is the set of all possible x-values which will make the 
+function "work", and will output real y-values.
 
 Rules to remember:
 \begin{enumerate}
@@ -151,16 +132,114 @@ Rules to remember:
 
 Step-by-Step Solution:
 \begin{enumerate}
-  \item The denominator (bottom) of a fraction cannot be zero.
-  \item The number under a square root sign should be positive.
+  \item The domain of $f(x)=x-7$ is all real number 
+  $\mathbb{R}$ (-$\infty$, $\infty$). 
+  \item The domain of $g(x)=x^2-49$ is all real number 
+  $\mathbb{R}$ (-$\infty$, $\infty$).\\
+  \item Answer all real number $\mathbb{R}$ (-$\infty$, $\infty$).
 \end{enumerate}
 
-\subsection{Question 2:}
+Book Notes:
+\begin{enumerate}
+  \item Note one.
+  \item Note two.
+  \item Note three.
+\end{enumerate}
 
+% Question 02 /////////////////////////////////////////////////////////////////
+\subsection{Question 2:}
 2. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
 
+% Question 03 /////////////////////////////////////////////////////////////////
 \subsection{Question 3:}
-
 3. Draw the graph of $y=2-|x-5|$.
+
+\begin{tikzpicture}
+\begin{axis}[axis lines = left, xlabel = $x$, ylabel = {$f(x)$},]
+%Below the red parabola is defined
+\addplot [domain=-10:10, samples=100, color=red,]
+  {x^2 - 2*x - 1};
+\addlegendentry{$x^2 - 2x - 1$}
+%Here the blue parabloa is defined
+\addplot [domain=-10:10, samples=100, color=blue,]
+  {x^2 + 2*x + 1};
+\addlegendentry{$x^2 + 2x + 1$}
+\end{axis}
+\end{tikzpicture}
+
+% Question 04 /////////////////////////////////////////////////////////////////
+\subsection{Question 4:}
+Write an equation of the line parallel to the line 
+  $y=2-\frac{3}{2}x$ at $(4,-2)$ and sketch its graph.
+  \\\\
+  Rules to remember:
+  \begin{enumerate}
+    \item Take the negative reciprical for the slope.
+    \item The number under a square root sign should be positive.
+  \end{enumerate}
+
+% Question 05 /////////////////////////////////////////////////////////////////
+\subsection{Question 5:}
+  Draw the graph of $y=2x^2-16x+24$ and label its minimum.
+  \\\\
+  Rules to remember:
+  \begin{enumerate}
+    \item Take the negative reciprical for the slope.
+    \item The number under a square root sign should be positive.
+  \end{enumerate}
+
+% Question 06 /////////////////////////////////////////////////////////////////
+\subsection{Question 6:}
+  Draw the graph of $y=\sqrt{x-7}$.
+  \\\\
+  Rules to remember:
+  \begin{enumerate}
+    \item Take the negative reciprical for the slope.
+    \item The number under a square root sign should be positive.
+  \end{enumerate}
+
+% Question 07 /////////////////////////////////////////////////////////////////
+\subsection{Question 4:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 08 /////////////////////////////////////////////////////////////////
+\subsection{Question 4:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 09 /////////////////////////////////////////////////////////////////
+\subsection{Question 4:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 10 /////////////////////////////////////////////////////////////////
+\subsection{Question 10:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 11 /////////////////////////////////////////////////////////////////
+\subsection{Question 11:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 12 /////////////////////////////////////////////////////////////////
+\subsection{Question 12:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 13 /////////////////////////////////////////////////////////////////
+\subsection{Question 13:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 14 /////////////////////////////////////////////////////////////////
+\subsection{Question 14:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 15 /////////////////////////////////////////////////////////////////
+\subsection{Question 15:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 16 /////////////////////////////////////////////////////////////////
+\subsection{Question 16:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+
+% Question 17 /////////////////////////////////////////////////////////////////
+\subsection{Question 17:}
+4. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
 
 \end{document}
