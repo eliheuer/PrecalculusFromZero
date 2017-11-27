@@ -137,22 +137,58 @@ Step-by-Step Solution:
 Book Notes:
 \begin{enumerate}
   \item Read 1.8 -- Combinations of Functions, Page 84
-    \item Read 1.8 --Finding the Domains of Quotients of Functions, Page 85  
+    \item Read 1.8 --Find Domains of Quotients of Functions, Page 85  
 \end{enumerate}
 
-% TODO
+% Done Pass 1
 % Question 02 /////////////////////////////////////////////////////////////////
 \subsection{Question 2:}
-2. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$.
+2. Draw the graph of $y=2cos(2x)$ from $x=0$ to $x=2\pi$. \\\\
 
-\newpage
+Rules to remember:
+\begin{enumerate}
+\item y=2sin(x) Indicates that the y-values for the key points will have
+  twice the magnitude ofthose on the graph of y  sin x.
+  \item 2pi is one full cycle ending at 6.28(3.14*2).
+\end{enumerate}
+
+\begin{tikzpicture}
+    \begin{axis}[
+     clip=false,
+     xmin=0,xmax=2*pi,
+     %axis lines=left,
+     %axis x line=middle,
+     %axis y line=left,
+     xtick={0,1.57,3.14,4.71,6.28},
+     xticklabels={$0$, $\frac{\pi}{2}$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}
+     ]
+      \addplot[domain=0:2*pi,samples=200,red]
+        {sin(deg(x))}node[right,pos=0.9]{$f(x)=\sin x$};
+      \addplot[domain=0:2*pi,samples=200,blue]
+        {cos(deg(x))}node[right,pos=0.9]{$f(x)=\cos x$};
+    \end{axis}
+  \end{tikzpicture}
+
+Book Notes:
+\begin{enumerate}
+  \item Read 4.5 -- Combinations of Functions, Page 84
+    \item Read 1.8 --Find Domains of Quotients of Functions, Page 85  
+\end{enumerate}
+
+
 % TODO Cant figure out how to make a plot for this.
 % Question 03 /////////////////////////////////////////////////////////////////
 \subsection{Question 3:}
 3. Draw the graph of $y=2-|x-5|$.
-\\\\\\\\\\
+\\\\\\
 
-% TODO
+Rules to remember:
+\begin{enumerate}
+\item In the || the x position reverse when it goes through the function.
+  \item 2 moves vertex on the y axis, no reversal. 
+\end{enumerate}
+
+% Done Pase 1 - needs refactoring
 % Question 04 /////////////////////////////////////////////////////////////////
 \subsection{Question 4:}
 Write an equation of the line parallel to the line 
@@ -161,9 +197,22 @@ Write an equation of the line parallel to the line
   Rules to remember:
   \begin{enumerate}
     \item Take the negative reciprical for the slope.
-    \item The number under a square root sign should be positive.
+    \item If not in slope intercept form, make the conversion $y=mx+b$
+    \item Use $y-y_1=m(x-x_1)$ to find the parrallel line at two given points $(x_1, Y_1)$
   \end{enumerate}
 
+  Step-by-Step Solution:
+  \begin{enumerate}
+    \item If not in $y=mx+b$ form, make the conversion. \\
+      \text{..$4x-2y=3$} \\
+      \text{$-4x$.......$-4x$}\\\\
+      $\frac{-2y}{2}=\frac{3}{2}-\frac{4x}{2}$
+    \item Use $y-y_1=m(x-x_1)$ with $(x_1, y_1)$ = $(4, -2)$
+    \item 
+    \item \textbf{Answer:} $y=-\frac{3}{2}x+4$
+  \end{enumerate}
+
+  
 % TODO
 % Question 05 /////////////////////////////////////////////////////////////////
 \subsection{Question 5:}
@@ -174,6 +223,23 @@ Write an equation of the line parallel to the line
     \item Take the negative reciprical for the slope.
     \item The number under a square root sign should be positive.
   \end{enumerate}
+
+  \begin{tikzpicture}[baseline]
+  \begin{axis}[
+    axis y line=center,
+    axis x line=middle,
+    axis equal,
+    grid=both,
+    xmax=30,xmin=-10,
+    ymin=-10,ymax=10,
+    xlabel=$x$,ylabel=$y$,
+    xtick={-10,...,30},
+    ytick={-10,...,10},
+    width=15cm,
+    anchor=center,]
+  \addplot {2^2-16*x+24} ;
+  \end{axis}
+  \end{tikzpicture}
 
 % TODO
 % Question 06 /////////////////////////////////////////////////////////////////
